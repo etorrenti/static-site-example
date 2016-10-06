@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Press Release - {{ title }} | MapR</title>
+  <meta name="description" content="{{ description }}">
+  <!--START Google Tag Manager -->
+
+  <!--END Google Tag Manager -->
+</head>
+<body>
+  <header>
+    <!--This is where are navigation will get inserted-->
+    {{__ 'navigation'}}
+    {{> navigation }}
+  </header>
+
+  <!-- This is where the title of the page goes -->
+  <h1>{{ title }}</h1>
+
+  <!-- Press releases always have a location -->
+  <div class="place">{{ releaseLocation }}</div>
+  <!-- And we also require a date too! -->
+  <div class="date">{{ publish }}</div>
+
+  <!-- START BODY -->
+  {{{ contents }}}
+  <!-- END BODY -->
+
+  <hr>
+
+  <div class="about">
+    <span class="about">ABOUT MAPR TECHNOLOGIES</span>
+    <h1>About MapR Technologies</h1>
+    <p><a href="https://www.mapr.com/">MapR</a> provides the industry's only converged data platform that integrates the power of Hadoop and Spark with global event streaming, real-time database capabilities, and enterprise storage, enabling customers to harness the enormous power of their data. Organizations with the most demanding production needs, including sub-second response for fraud prevention, secure and highly available data-driven insights for better healthcare, petabyte analysis for threat detection, and integrated operational and analytic processing for improved customer experiences, run on MapR. A majority of customers achieves payback in fewer than 12 months and realizes greater than 5X ROI. MapR ensures customer success through world-class professional services and with free on-demand training that 50,000 developers, data analysts and administrators have used to close the big data skills gap. Amazon, Cisco, Google, HPE, Microsoft, SAP, and Teradata are part of the worldwide MapR partner ecosystem. Investors include Google Capital, Lightspeed Venture Partners, Mayfield Fund, NEA, Qualcomm Ventures and Redpoint Ventures. Connect with MapR on <a href="https://www.linkedin.com/company/mapr-technologies">LinkedIn</a>, and <a href="https://twitter.com/mapr">Twitter</a>.</p>
+    <h2>MEDIA CONTACTS</h2>
+    <p>Beth Winkowski<br/>
+    MapR Technologies, Inc.<br/>
+    (978) 649-7189<br/>
+    <a href="mailto:bwinkowski@maprtech.com">bwinkowski@maprtech.com</a></p>
+    <p>Kim Pegnato<br/>
+    MapR Technologies, Inc.<br/>
+    (781) 620-0016<br/>
+    <a href="mailto:kpegnato@maprtech.com">kpegnato@maprtech.com</a></p>
+    <p><a href="https://www.mapr.com/company/press-releases">www.mapr.com/company/press-releases</a></p>
+  </div>
+
+  <footer>
+    <!-- footer menu here -->
+  </footer>
+</body>
+</html>

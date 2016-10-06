@@ -1,0 +1,54 @@
+# Project level files #
+#######################
+/logs/
+*.log
+.linksChecked.json
+.linksFailed.json
+.htmlChecked.json
+.htmlFailed.json
+
+# Package Files #
+*.zip
+
+# Node related junk
+node_modules
+target
+test
+src2
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Editor generated files #
+##########################
+# eclipse project files
+**/.classpath
+**/.project
+**/.settings/
+.project
+.settings/
+
+# intelliJ IDEA project files
+.idea/
+*.iml
+
+# Other
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
+*.swp
+**/dependency-reduced-pom.xml
+build

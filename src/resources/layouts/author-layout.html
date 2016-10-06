@@ -1,0 +1,24 @@
+{{> header }}
+
+  <!-- START BODY -->
+  <div class="author">
+    <p><img alt="Headshot for {{ data.displayName }}" src="/resources/images/authors/{{ data.image }}"></p>
+    <h1>{{ data.displayName }}</h1>
+    <h2>{{ data.title }}, {{ data.company }}</h2>
+{{#bold}} anything {{/bold}}
+    <p>{{ data.biography }}</p>
+    <!-- Social should be optional via JavaScript. If not in author's profile, hide the tag -->
+    <div class="social">
+      <p class="twitter">{{ data.twitter }}</p>
+      <p class="linkedin">{{ data.linkedin }}</p>
+    </div>
+  </div>
+  <!-- END BODY -->
+
+  <!-- START Article List -->
+  <h3>Author's Posts</h3>
+  {{{ articleList }}}
+  <!-- END Article List -->
+
+<!-- Start Footer -->
+{{> footer }}

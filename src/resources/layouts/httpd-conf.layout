@@ -1,0 +1,8 @@
+ServerName webserver
+DocumentRoot /var/www
+ServerRoot /etc/apache2
+Listen 80
+User apache
+Group apache
+
+{{{ contents }}}

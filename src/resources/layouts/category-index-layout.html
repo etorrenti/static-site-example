@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CONVERGE BLOG CATEGORY LIST!!! - {{ tag }}</title>
+  <meta name="description" content="{{ description }}">
+  <!--START Google Tag Manager -->
+
+  <!--END Google Tag Manager -->
+  <style>
+	.thumb{
+		max-height: 80px;
+	}  
+	</style>
+</head>
+<body>
+  <header>
+    <!--This is where are navigation will get inserted-->
+    <h1>Posts for {{tag}}</h1>
+  </header>
+
+  <!-- START BODY -->
+
+  <div class="name">{{ data.CategoryTitle }}</div>
+  <ul>{{#each pagination.files}}
+	  
+	<li><img class="thumb" src="/{{this.path}}/assets/{{field_image}}" />{{title}} <p>{{{ this.excerpt }}}</p>
+	
+	<div><a href="/{{this.path}}">READ MORE</a></div>
+	</li>
+{{/each}}  <!-- END BODY -->
+
+  <footer>
+    <!-- footer menu here -->
+  </footer>
+</body>
+</html>

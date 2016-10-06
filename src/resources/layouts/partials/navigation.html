@@ -1,0 +1,10 @@
+{{#each this.categories}}
+	  
+	<h3><a href="/{{ this.URL }}">{{ this.Title }}</a></h3>
+	{{#each this.children}}
+		<span><a href="/{{ this.URL }}">{{ this.Title }}</a></span>
+	{{/each}} 
+	
+{{/each}} 
+
+<p>Version: {{__ 'version'}}</p>

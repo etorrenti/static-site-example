@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CONVERGE BLOG!!! - {{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <!--START Google Tag Manager -->
+
+  <!--END Google Tag Manager -->
+</head>
+<body>
+  <header>
+    <!--This is where are navigation will get inserted-->
+    {{> navigation }}
+  </header>
+
+  <!-- This is where the title of the page goes -->
+  <h1>{{ title }}</h1>
+
+  <div class="publishDate">{{ publish }}</div>
+
+  <!-- START BODY -->
+  {{{ contents }}}
+  <!-- END BODY -->
+
+<!-- Start Footer -->
+{{> footer }}
